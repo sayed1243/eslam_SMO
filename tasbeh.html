@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+		<meta charset = "UTF-8">
+		<title>SAYED MO / المسبحة الإلكترونية & موقع اسلامى</title>	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+			
+			*{
+				padding:0;
+				margin:0;
+				box-sizing: border-box;
+  font-family: "Beiruti", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  word-spacing: 2px;
+  }
+
+.title div{
+background:#663399;
+font-size: 30px;
+text-align: center;
+color: white;
+padding:10px;
+font-weight:700;
+margin-bottom:40px;
+}
+
+.container {
+	background:#663399;
+	width:80%;
+	margin: auto;
+	position: relative;
+	top:30%;
+	min-height:0px;
+	padding-top:20px;
+  }
+  
+  .content{
+   	background:white;
+       min-height:0px;
+       width:90%;
+       font-size:30px;
+       margin:20px auto;
+       padding: 10px;
+      }
+      
+      .btn{
+      display:flex;
+      Justify-content: space-between;
+      padding:20px 0;
+      width:90%;
+      margin:2px auto 20px auto ;
+      
+}
+      	
+     .btn button{
+      	background:white;
+      	width:45%;
+          border: none;
+          height:40px;
+          padding:5px;
+          font-size:18px;
+          font-weight:700
+         }
+         
+         /*2*/
+         .container2{
+         	position: relative;
+             top:0%}
+         
+         .content2{
+             height:200px;
+             width:200px;
+             border-radius:50%;
+             border: solid 5px silver;
+             margin:20px auto;
+             display:flex;
+            align-items: center ;
+            Justify-content: center; 
+            text-align: center 
+            } 
+            
+            .content2 div{
+            	font-size:30px;
+            	}
+            
+            .txt{
+            display:flex;
+             margin:20px auto;
+             display:flex;
+            align-items: center ;
+            Justify-content: center; 
+            flex-direction:column;
+            width:90%;
+            }
+            
+            input, select, button {
+            	width:100%;
+            height:50px;
+            margin:10px 0;
+            padding:10px;
+            font-size:20px;
+            }
+            
+            .txt button{
+            	background:#663399;
+color:#fff;
+border:none;
+
+}
+            
+            .s{
+            	background:#663399;
+                 color:white;
+                 width:100%;
+                 padding:10px
+                 }
+                 
+              #show{
+              	background:#663399;
+                 color:white;
+                 width:100%;
+                 padding:10px;
+                 width:90%;
+                 margin:10px auto;
+                 display:none;
+                 font-size:20px
+                 }
+    
+       </style>
+</html>
+<body style="direction:rtl; background: seashell; " >
+<div class="title">
+    <div>المسبحة الإلكترونية</div>
+</div>
+<!--
+<div class="container">
+<div class="content"><p>0</p></div>
+<div class="btn">
+<button id="click" onclick="clickbtn()">تسبيح</button>
+<button id="reset" onclick="resetbtn()">إعادة تعيين</button>
+</div>
+</div>-->
+
+<div class="container2">
+<div class="txt">
+<input id="input" type="text" placeholder="أكتب إسم الذكر" >
+	<!--
+<div class="s"><label for="number">أختر عدد المرات</label></div>
+<select id="selector">
+	<option id="op1">1</option>
+	<option id="op2">5</option>
+	<option id="op3">10</option>
+    <option id="op4">33</option>
+    <option id="op5">99</option>
+    <option id="op6">100</option>
+    <option id="op7">1000</option>
+</select>	-->
+<button onclick="ok()">تأكيد</button>
+</div>
+<div class="content2"><div>0</div></div>
+<div id="show"></div>
+<div class="btn">
+<button id="click" onclick="clickbtn()">اضغط</button>
+<button id="reset" onclick="resetbtn()">إعادة تعيين</button>
+</div>
+</div>
+
+
+
+<script>
+let content = document.querySelector(".content2 div")  
+let click = document.querySelector("#click")  
+let reset = document.querySelector("#reset") 
+let number = 0;
+
+function clickbtn(){
+if (number < 1000) {
+                number++;
+                content.innerText = number ;
+            }
+ else {
+                content.innerText = "غفر الله لك سيتم البدء مجدداً";
+                setTimeout(function() {
+                    number = 0;
+                    content.innerText = currentNumber;
+                }, 2000); }
+}
+
+function resetbtn(){
+	content.innerHTML = 0;
+	number = 0 ;
+	}
+
+function ok(){
+document.getElementById("show").style.display = "block"
+var input = document.getElementById('input').value;
+document.getElementById("show").innerText = input;
+document.getElementById("input").value = '';
+/*
+if(document.getElementById('input') === ' '){
+	document.getElementById("show").style.display = "none"
+	}*/
+}	
+	
+	/*
+function ok(){
+	if(document.getElementById("selector") == document.getElementById("op1") ){
+     
+	}}*/
+</script>			
+</body>
+</html>		

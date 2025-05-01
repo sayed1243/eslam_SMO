@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+		<meta charset = "UTF-8">
+		<title>SAYED MO / موقع إسلامي</title>	
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+			
+			*{
+				padding:0;
+				margin:0;
+				box-sizing: border-box;
+  font-family: "Beiruti", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  word-spacing: 2px;
+				}
+				
+				.navbar{
+					background:#663399;
+					position:fixed;
+					bottom:0;
+					width:100%;
+					display:flex;
+					Justify-content: space-evenly;
+					color:white;
+					padding:10px;
+					z-index:99999;
+					}
+					
+				.navbar div:hover {
+					border-bottom:white 3px solid;
+					}
+
+					#quiz{
+						margin-bottom: 50px;
+					}
+
+
+                    h1{
+                        background-color: #663399;
+                        color: aliceblue;
+                        text-align: center;
+                        padding: 20px;
+                    }
+
+
+                    @media (min-width:750px) {
+                        .splach{
+                        background-image: url(images/splach.jpg);
+                        height:600px;
+                        width: 700px;
+                        margin: 50px auto;
+                        background-size: contain;}
+
+                        
+                    }
+
+                    @media (max-width:751px) {
+                        .splach{
+                        background-image: url(images/splach.jpg);
+                        height:300px;
+                        width: 350px;
+                        margin: 50px auto;
+                        background-size: contain;}
+
+                        
+                    }
+
+				
+				
+	
+h2{
+    text-align: center;
+    margin: 90px 0 20px 0;
+}
+
+                    .social{
+display: flex;
+flex-wrap: wrap;
+Justify-content: space-evenly;
+margin-bottom: 100px;
+}
+					
+.social div{
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 20px;
+font-size: 40px;
+text-align: center;
+height:100px;
+width:300px;
+margin: 10px;
+transition:0.5s;
+}
+
+.social div:hover{
+	background:#ffe4b5;
+	transform: scale(1.1);
+	border: 1px solid ;
+    cursor: pointer;
+	
+}	
+
+a{
+    text-decoration: none;
+    color:#663399;
+}
+       </style>
+</html>
+<body style="direction:rtl; background: seashell; " >
+	
+	<div class="navbar">
+		<div id="index">الرئيسية</div>
+		<div id="index2">مواقيت الصلاة</div>
+		<div id="index3">القرآن الكريم</div>
+		<div id="index4">إذاعات إسلامية</div>
+		<div id="index5">عنا</div>
+		</div>
+
+<div class="container">
+    <h1>أهلا بكم فى موقع اسلامى </h1>
+</div>
+
+<div class="splach"></div>
+
+<h2>الأقسام</h2>
+<div class="social">
+<a href="index2.html"><div>مواقيت الصلاة</div></a>
+<a href="index3.html"><div>القرآن الكريم</div></a>
+<a href="index4.html"><div>إذاعات إسلامية</div></a>
+<a href="tasbeh.html"><div>المسبحة </div></a>
+<a href="morning.html"><div>الأذكار </div></a>
+<a href="names.html"><div>أسماء الله الحسنى</div></a>
+<a href="hades.html"><div>الأحاديث النبوية</div></a>
+<a href="index5.html"><div>من نحن</div></a>
+</div>
+<script>
+
+	document.querySelector("#index2").onclick = function(){
+	window.open("index2.html")}
+
+	document.querySelector("#index3").onclick = function(){
+		window.open("index3.html")}
+
+        document.querySelector("#index4").onclick = function(){
+	window.open("index4.html")}
+	
+	document.getElementById("#index5").onclick = function(){
+	window.open("index5.html")}
+
+</script>			
+</body>
+</html>		
